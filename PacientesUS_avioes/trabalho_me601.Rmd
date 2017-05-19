@@ -102,6 +102,7 @@ legenda_Boxplot_3 = figs(name="boxplot3",caption = "Boxplot para Terceira Tentat
 
 ```{r,echo=FALSE, warning=FALSE, error=FALSE}
 #gerando os gráficos de controle do tipo i (de individuais)
+library(qicharts)
 generator <-function(x,n){
   qic(y = x, chart = 'i',    
     main = n, 
